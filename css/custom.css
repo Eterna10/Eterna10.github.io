@@ -1,0 +1,44 @@
+/* 标题打字效果光标 */
+@keyframes blink-cursor {
+  50% { opacity: 0; }
+}
+.typing-cursor {
+  display: inline-block;
+  width: 2px;
+  height: 1em;
+  background: currentColor;
+  margin-left: 2px;
+  vertical-align: middle;
+  animation: blink-cursor 0.75s step-end infinite;
+}
+
+/* 文章卡片透明效果 —— 修改下方 0.7 / 0.5 可调整透明度 */
+:root {
+  --card-bg: rgba(255, 255, 255, 0.7); /* 日间模式 */
+}
+[data-theme="dark"] {
+  --card-bg: rgba(30, 30, 30, 0.5);    /* 夜间模式 */
+}
+.recent-post-item {
+  background: var(--card-bg) !important;
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+}
+
+/* 首页标题字体大小 */
+#site-info #site-title {
+  font-size: 4rem;
+}
+/* 全局字体设置 */
+@font-face {
+  font-family: 'MyFont';
+  src: url('/My_fonts/AaGuXiLaZhangGuanKeAiDeShen-2.woff') format('woff'),
+       url('/My_fonts/AaGuXiLaZhangGuanKeAiDeShen-2.ttf') format('truetype');
+  font-display: swap;
+}
+
+/* 文章正文字体大小 */
+#article-container {
+  font-size: 18px;
+  line-height: 1.8;
+}
