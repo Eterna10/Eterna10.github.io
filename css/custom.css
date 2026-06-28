@@ -19,11 +19,13 @@
 [data-theme="dark"] {
   --card-bg: rgba(30, 30, 30, 0.5);    /* 夜间模式 */
 }
+/*
 .recent-post-item {
   background: var(--card-bg) !important;
   backdrop-filter: blur(8px);
   -webkit-backdrop-filter: blur(8px);
 }
+*/
 
 /* 首页标题字体大小 */
 #site-info #site-title {
@@ -44,9 +46,7 @@
 }
 
 /*页脚半透明 */
-#footer {
-  background: rgba(0, 0, 0, 0.4) !important;
-}
+#footer { background: rgba(0, 0, 0, 0.4) !important; background-color: rgba(0, 0, 0, 0.4) !important; }
 /*top-background过渡 */
 #page-header {
   position: relative;
