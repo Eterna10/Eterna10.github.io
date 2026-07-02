@@ -34,8 +34,7 @@
 /* 全局字体设置 */
 @font-face {
   font-family: 'MyFont';
-  src: url('/My_fonts/AaGuXiLaZhangGuanKeAiDeShen-2.woff') format('woff'),
-       url('/My_fonts/AaGuXiLaZhangGuanKeAiDeShen-2.ttf') format('truetype');
+  src: url('/My_fonts/FZWenQYLDDTS-M.woff') format('woff');
   font-display: swap;
 }
 
